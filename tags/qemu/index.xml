@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qemu on CyberLedger</title>
+    <link>//localhost:35631/tags/qemu/</link>
+    <description>Recent content in Qemu on CyberLedger</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 18 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:35631/tags/qemu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup QEMU/KVM on Arch Linux</title>
+      <link>//localhost:35631/posts/setup-qemu-on-arch/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:35631/posts/setup-qemu-on-arch/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:35631/images/qemu_kvm_setup/qemuarch.jpg&#34; alt=&#34;qemuface&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;INTRODUCTION&lt;/h2&gt;&#xA;&lt;p&gt;Virtualization on Arch Linux often feels confusing, especially for users coming from VirtualBox or VMware.&lt;br&gt;&#xA;These tools are great for beginners, but they consume a lot of system resources and can slow down the overall experience.&lt;/p&gt;&#xA;&lt;p&gt;In this guide, we will use &lt;strong&gt;QEMU with KVM acceleration&lt;/strong&gt;, a faster and more efficient virtualization solution built directly into the Linux kernel.&lt;br&gt;&#xA;It gives you better performance, lower resource usage, and a smoother workflow on Arch Linux.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

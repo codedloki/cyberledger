@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=35631&amp;path=livereload" data-no-instant defer></script>
+    <title>Setup QEMU/KVM on Arch Linux // CyberLedger</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:35631/">
+  <meta name="twitter:title" content="Setup QEMU/KVM on Arch Linux">
+  <meta name="twitter:description" content="INTRODUCTION Virtualization on Arch Linux often feels confusing, especially for users coming from VirtualBox or VMware.
+These tools are great for beginners, but they consume a lot of system resources and can slow down the overall experience.
+In this guide, we will use QEMU with KVM acceleration, a faster and more efficient virtualization solution built directly into the Linux kernel.
+It gives you better performance, lower resource usage, and a smoother workflow on Arch Linux.">
+
+    <meta property="og:url" content="//localhost:35631/posts/setup-qemu-on-arch/">
+  <meta property="og:site_name" content="CyberLedger">
+  <meta property="og:title" content="Setup QEMU/KVM on Arch Linux">
+  <meta property="og:description" content="INTRODUCTION Virtualization on Arch Linux often feels confusing, especially for users coming from VirtualBox or VMware.
+These tools are great for beginners, but they consume a lot of system resources and can slow down the overall experience.
+In this guide, we will use QEMU with KVM acceleration, a faster and more efficient virtualization solution built directly into the Linux kernel.
+It gives you better performance, lower resource usage, and a smoother workflow on Arch Linux.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-18T00:00:00+00:00">
+    <meta property="article:tag" content="Arch">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Archlinux">
+    <meta property="article:tag" content="Qemu">
+    <meta property="article:tag" content="Kvm">
+    <meta property="article:tag" content="Vm">
+    <meta property="og:image" content="//localhost:35631/">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">CyberLedger</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/posts">Blog</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>My Documentation</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Setup QEMU/KVM on Arch Linux</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Nov 18, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          2 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/arch/">Arch</a>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/archlinux/">Archlinux</a>
+              <a class="tag" href="/tags/qemu/">Qemu</a>
+              <a class="tag" href="/tags/kvm/">Kvm</a>
+              <a class="tag" href="/tags/vm/">Vm</a>
+              <a class="tag" href="/tags/virtual/">Virtual</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><img src="/images/qemu_kvm_setup/qemuarch.jpg" alt="qemuface"></p>
+<h2 id="introduction">INTRODUCTION</h2>
+<p>Virtualization on Arch Linux often feels confusing, especially for users coming from VirtualBox or VMware.<br>
+These tools are great for beginners, but they consume a lot of system resources and can slow down the overall experience.</p>
+<p>In this guide, we will use <strong>QEMU with KVM acceleration</strong>, a faster and more efficient virtualization solution built directly into the Linux kernel.<br>
+It gives you better performance, lower resource usage, and a smoother workflow on Arch Linux.</p>
+<h2 id="system-requirements">System Requirements</h2>
+<ol>
+<li>Virtualization Enabled in BIOS</li>
+<li>Stable Internet Connection</li>
+<li>Basic Terminal Settings</li>
+</ol>
+<h2 id="installation-guide">Installation guide</h2>
+<ol>
+<li>Execute Below command</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo pacman -S qemu-full qemu-img libvirt virt-install virt-manager virt-viewer <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>edk2-ovmf dnsmasq swtpm guestfs-tools libosinfo tuned
+</span></span></code></pre></div><ol start="2">
+<li>This are services required to  be running  to run the qemu  but recommend instead of enabling them which will start them when the system boot increasing the resource usage i suggest just start them when u require them</li>
+</ol>
+<hr>
+<ul>
+<li>
+<ol>
+<li>Option : Enable modular daemon</li>
+</ol>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> drv in qemu interface network nodedev nwfilter secret storage; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    sudo systemctl restart virt<span style="color:#e6db74">${</span>drv<span style="color:#e6db74">}</span>d.service;
+</span></span><span style="display:flex;"><span>    sudo systemctl restart virt<span style="color:#e6db74">${</span>drv<span style="color:#e6db74">}</span>d<span style="color:#f92672">{</span>,-ro,-admin<span style="color:#f92672">}</span>.socket;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><ul>
+<li>
+<ol start="2">
+<li>Option : Enable monolithic daemon</li>
+</ol>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl enable libvirtd.service
+</span></span></code></pre></div><hr>
+<ol>
+<li>
+<p>if you want we can enable nested  nested virtualization its based on your use case (<strong>optional</strong>)</p>
+<pre><code> 1. Temporary session
+</code></pre>
+<p><em>For Intel</em></p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  sudo modprobe -r kvm_intel
+</span></span><span style="display:flex;"><span>  sudo modprobe kvm_intel nested<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p><em>for AMD</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>	sudo modprobe -r kvm_amd
+</span></span><span style="display:flex;"><span>	sudo modprobe kvm_amd nested<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><ol start="2">
+<li>Permanent Session</li>
+</ol>
+<p><em>For Intel</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>	echo <span style="color:#e6db74">&#34;options kvm_intel nested=1&#34;</span> | sudo tee /etc/modprobe.d/kvm-intel.conf
+</span></span></code></pre></div><p><em>For AMD</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>	echo <span style="color:#e6db74">&#34;options kvm_amd nested=1&#34;</span> | sudo tee /etc/modprobe.d/kvm-amd.conf
+</span></span></code></pre></div><h1 id="heading">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h1>
+<h3 id="enabling-immomu--for-intel-">Enabling IMMOMU  (FOR INTEL )</h3>
+<p>IOMMU = Input–Output Memory Management Unit</p>
+<p>Think of it like a <strong>traffic controller</strong> for hardware devices.</p>
+<p>It controls how PCI devices (GPU, USB controllers, NVMe disks, etc.) access system memory.
+without it:</p>
+<ul>
+<li>
+<p>You <strong>cannot assign hardware directly</strong> to a virtual machine</p>
+</li>
+<li>
+<p>GPU passthrough will not work</p>
+</li>
+<li>
+<p>Device isolation becomes weak</p>
+</li>
+<li>
+<p>Security decreases</p>
+</li>
+</ul>
+<ol>
+<li>Open your GRUB config</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo vim /etc/default/grub	
+</span></span></code></pre></div><ol start="2">
+<li>Add following kernel module entries</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#/etc/default/grub </span>
+</span></span><span style="display:flex;"><span>GRUB_CMDLINE_LINUX<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;... intel_iommu=on iommu=pt&#34;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Regenerate the grub config</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></div><ol start="3">
+<li>Set Profile to  <code>virtual-host</code> for tuned</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo tuned-adm profile virtual-host
+</span></span></code></pre></div><h1 id="heading-1">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h1>
+<h3 id="enable-sev-for-amd">ENABLE SEV (FOR AMD)</h3>
+<h4 id="option-1--enable-sev-in-amd--using-modproble">Option 1 : ENABLE SEV IN AMD  using modproble</h4>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;options kvm_amd sev=1&#34;</span> | sudo tee /etc/modprobe.d/amd-sev.conf
+</span></span><span style="display:flex;"><span>sudo reboot now
+</span></span></code></pre></div><hr>
+<h4 id="option-2--enable-sev-in-amd-using-grub">Option 2 : ENABLE SEV IN AMD USING GRUB</h4>
+<hr>
+<ol>
+<li>Open your grub config file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  sudo vim /etc/default/grub
+</span></span></code></pre></div><ol start="2">
+<li>Add following lines to the file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  GRUB_CMDLINE_LINUX<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;... mem_encrypt=on kvm_amd.sev=1&#34;</span>
+</span></span></code></pre></div><p>3.Regenerate the grub config</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  sudo grub-mkconfig -o /boot/grub/grub.cfg
+</span></span><span style="display:flex;"><span>  sudo reboot now
+</span></span></code></pre></div><h1 id="-">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</h1>
+<h3 id="optimizing-host-with-tuned">OPTIMIZING HOST WITH TUNED</h3>
+<ol>
+<li>Enable TuneD at startup</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl enable --now tuned.service
+</span></span></code></pre></div><ol start="2">
+<li>Check Active profile</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>tuned-adm active
+</span></span></code></pre></div><ol start="3">
+<li>Set profile to <code>virtual-host</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo tuned-adm profile virtual-host
+</span></span></code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
