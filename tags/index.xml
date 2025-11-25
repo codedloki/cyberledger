@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CyberLedger</title>
-    <link>localhost/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on CyberLedger</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 24 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="localhost/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archlinux</title>
-      <link>localhost/tags/archlinux/</link>
+      <link>/tags/archlinux/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/archlinux/</guid>
+      <guid>/tags/archlinux/</guid>
       <description></description>
     </item>
     <item>
       <title>Ccna</title>
-      <link>localhost/tags/ccna/</link>
+      <link>/tags/ccna/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/ccna/</guid>
+      <guid>/tags/ccna/</guid>
       <description></description>
     </item>
     <item>
       <title>Cisco</title>
-      <link>localhost/tags/cisco/</link>
+      <link>/tags/cisco/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/cisco/</guid>
+      <guid>/tags/cisco/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>localhost/tags/network/</link>
+      <link>/tags/network/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/network/</guid>
+      <guid>/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Packettracer</title>
-      <link>localhost/tags/packettracer/</link>
+      <link>/tags/packettracer/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/packettracer/</guid>
+      <guid>/tags/packettracer/</guid>
       <description></description>
     </item>
     <item>
       <title>Setups</title>
-      <link>localhost/tags/setups/</link>
+      <link>/tags/setups/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/setups/</guid>
+      <guid>/tags/setups/</guid>
       <description></description>
     </item>
     <item>
       <title>Simulation</title>
-      <link>localhost/tags/simulation/</link>
+      <link>/tags/simulation/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/simulation/</guid>
+      <guid>/tags/simulation/</guid>
       <description></description>
     </item>
     <item>
       <title>Arch</title>
-      <link>localhost/tags/arch/</link>
+      <link>/tags/arch/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/arch/</guid>
+      <guid>/tags/arch/</guid>
       <description></description>
     </item>
     <item>
       <title>Kvm</title>
-      <link>localhost/tags/kvm/</link>
+      <link>/tags/kvm/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/kvm/</guid>
+      <guid>/tags/kvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>localhost/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Qemu</title>
-      <link>localhost/tags/qemu/</link>
+      <link>/tags/qemu/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/qemu/</guid>
+      <guid>/tags/qemu/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtual</title>
-      <link>localhost/tags/virtual/</link>
+      <link>/tags/virtual/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/virtual/</guid>
+      <guid>/tags/virtual/</guid>
       <description></description>
     </item>
     <item>
       <title>Vm</title>
-      <link>localhost/tags/vm/</link>
+      <link>/tags/vm/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/tags/vm/</guid>
+      <guid>/tags/vm/</guid>
       <description></description>
     </item>
   </channel>

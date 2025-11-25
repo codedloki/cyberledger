@@ -2,66 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>localhost/tags/archlinux/</loc>
+    <loc>/tags/archlinux/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/ccna/</loc>
+    <loc>/tags/ccna/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/series/ccna-practical/</loc>
+    <loc>/series/ccna/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/cisco/</loc>
+    <loc>/tags/cisco/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/</loc>
+    <loc>/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/network/</loc>
+    <loc>/tags/network/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/packettracer/</loc>
+    <loc>/series/networking/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/posts/</loc>
+    <loc>/tags/packettracer/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/series/</loc>
+    <loc>/posts/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/setups/</loc>
+    <loc>/series/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/simulation/</loc>
+    <loc>/tags/setups/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/</loc>
+    <loc>/tags/simulation/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/</loc>
+    <loc>/tags/</loc>
     <lastmod>2025-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/arch/</loc>
+    <loc>/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/arch/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/kvm/</loc>
+    <loc>/tags/kvm/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/linux/</loc>
+    <loc>/tags/linux/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/qemu/</loc>
+    <loc>/tags/qemu/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/posts/setup-qemu-on-arch-1/</loc>
+    <loc>/posts/setup-qemu-on-arch-1/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/virtual/</loc>
+    <loc>/tags/virtual/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/tags/vm/</loc>
+    <loc>/tags/vm/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>localhost/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>

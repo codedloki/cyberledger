@@ -8,18 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="John Doe" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="localhost/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
     
 
     
     
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="localhost/">
+  <meta name="twitter:image" content="/">
   <meta name="twitter:title" content="The Easiest Way to Install Cisco Packet Tracer on Arch Linux (Full Tutorial)">
   <meta name="twitter:description" content="INTRODUCTION Cisco Packet Tracer is a powerful network simulation tool developed by Cisco, widely used for learning and practicing networking concepts without the need for physical hardware. It allows students, network enthusiasts, and IT professionals to design, configure, and troubleshoot virtual networks in a safe environment.
 While Cisco officially provides Packet Tracer for Windows and Ubuntu/Debian-based Linux distributions, running it on Arch Linux requires a few extra steps due to differences in libraries and package management. In this guide, we’ll walk through the process of installing and configuring Packet Tracer on Arch Linux, including handling dependencies, setting up AppImage execution, and ensuring a smooth, fully functional setup.">
 
-    <meta property="og:url" content="localhost/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/">
+    <meta property="og:url" content="/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/">
   <meta property="og:site_name" content="CyberLedger">
   <meta property="og:title" content="The Easiest Way to Install Cisco Packet Tracer on Arch Linux (Full Tutorial)">
   <meta property="og:description" content="INTRODUCTION Cisco Packet Tracer is a powerful network simulation tool developed by Cisco, widely used for learning and practicing networking concepts without the need for physical hardware. It allows students, network enthusiasts, and IT professionals to design, configure, and troubleshoot virtual networks in a safe environment.
@@ -35,22 +35,22 @@ While Cisco officially provides Packet Tracer for Windows and Ubuntu/Debian-base
     <meta property="article:tag" content="Cisco">
     <meta property="article:tag" content="Packettracer">
     <meta property="article:tag" content="Ccna">
-    <meta property="og:image" content="localhost/">
+    <meta property="og:image" content="/">
 
 
   </head>
   <body>
     <header class="app-header">
-      <a href="/localhost/"><img class="app-header-avatar" src="/localhost/avatar.jpg" alt="John Doe" /></a>
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
       <span class="app-header-title">CyberLedger</span>
       <nav class="app-header-menu">
-          <a class="app-header-menu-item" href="localhost/posts">Blog</a>
+          <a class="app-header-menu-item" href="/posts">Blog</a>
              - 
           
-          <a class="app-header-menu-item" href="localhost/series/">Series</a>
+          <a class="app-header-menu-item" href="/series/">Series</a>
              - 
           
-          <a class="app-header-menu-item" href="localhost/tags/">Tags</a>
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
       </nav>
       <p>My Documentation</p>
     </header>
@@ -70,13 +70,13 @@ While Cisco officially provides Packet Tracer for Windows and Ubuntu/Debian-base
         </div>
         <div>
           <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-              <a class="tag" href="localhost/tags/archlinux/">Archlinux</a>
-              <a class="tag" href="localhost/tags/network/">Network</a>
-              <a class="tag" href="localhost/tags/simulation/">Simulation</a>
-              <a class="tag" href="localhost/tags/cisco/">Cisco</a>
-              <a class="tag" href="localhost/tags/packettracer/">Packettracer</a>
-              <a class="tag" href="localhost/tags/ccna/">Ccna</a>
-              <a class="tag" href="localhost/tags/setups/">Setups</a>
+              <a class="tag" href="/tags/archlinux/">Archlinux</a>
+              <a class="tag" href="/tags/network/">Network</a>
+              <a class="tag" href="/tags/simulation/">Simulation</a>
+              <a class="tag" href="/tags/cisco/">Cisco</a>
+              <a class="tag" href="/tags/packettracer/">Packettracer</a>
+              <a class="tag" href="/tags/ccna/">Ccna</a>
+              <a class="tag" href="/tags/setups/">Setups</a>
         </div>
       </div>
     </header>
@@ -96,7 +96,6 @@ base-devel : group of  basic tools for compiling source code
 axel : For faster download of files
 </code></pre>
 <h4 id="step-2--clone-the-source-code">Step 2 : Clone the source code</h4>
-<p><!-- raw HTML omitted -->Note: I Suggest you to create seperate folder inside which u clone this repo so keep the compiled application seperate<!-- raw HTML omitted --></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://aur.archlinux.org/packages/packettracer
 </span></span><span style="display:flex;"><span>cd packettracer <span style="color:#75715e">#move inside the packettracer director </span>
 </span></span></code></pre></div><h4 id="step-3--get-the-deb-file">Step 3 : Get the .deb file</h4>
@@ -109,7 +108,7 @@ axel : For faster download of files
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>makepkg -sirc
 </span></span></code></pre></div><h3 id="step-5--if-desktop-icons-not-created-automatically">Step 5 : If desktop icons not created automatically&hellip;</h3>
-<p>Create a manual .desktop file and save it to  <code>  /usr/share/application</code></p>
+<p>Create a manual .desktop file and save it to   /usr/share/application</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>Desktop Entry<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>Type<span style="color:#f92672">=</span>Application
 </span></span><span style="display:flex;"><span>Name<span style="color:#f92672">=</span>Cisco Packet Tracer

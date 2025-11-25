@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on CyberLedger</title>
-    <link>localhost/series/</link>
+    <link>/series/</link>
     <description>Recent content in Series on CyberLedger</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 24 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="localhost/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CCNA PRACTICAL</title>
-      <link>localhost/series/ccna-practical/</link>
+      <title>CCNA</title>
+      <link>/series/ccna/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/series/ccna-practical/</guid>
+      <guid>/series/ccna/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>/series/networking/</link>
+      <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>/series/networking/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archlinux on CyberLedger</title>
-    <link>localhost/tags/archlinux/</link>
+    <link>/tags/archlinux/</link>
     <description>Recent content in Archlinux on CyberLedger</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 24 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="localhost/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/archlinux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Easiest Way to Install Cisco Packet Tracer on Arch Linux (Full Tutorial)</title>
-      <link>localhost/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/</link>
+      <link>/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/</link>
       <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/</guid>
+      <guid>/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;INTRODUCTION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/dvo3jxlku/image/upload/v1763998763/archcisco_wygsbo.png&#34; alt=&#34;headerimage&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cisco Packet Tracer is a powerful network simulation tool developed by Cisco, widely used for learning and practicing networking concepts without the need for physical hardware. It allows students, network enthusiasts, and IT professionals to design, configure, and troubleshoot virtual networks in a safe environment.&lt;/p&gt;&#xA;&lt;p&gt;While Cisco officially provides Packet Tracer for Windows and Ubuntu/Debian-based Linux distributions, running it on Arch Linux requires a few extra steps due to differences in libraries and package management. In this guide, we’ll walk through the process of installing and configuring Packet Tracer on Arch Linux, including handling dependencies, setting up AppImage execution, and ensuring a smooth, fully functional setup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setup QEMU/KVM on Arch Linux</title>
-      <link>localhost/posts/setup-qemu-on-arch-1/</link>
+      <link>/posts/setup-qemu-on-arch-1/</link>
       <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>localhost/posts/setup-qemu-on-arch-1/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;localhost/images/qemu_kvm_setup/qemuarch.jpg&#34; alt=&#34;qemuface&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;INTRODUCTION&lt;/h2&gt;&#xA;&lt;p&gt;Virtualization on Arch Linux often feels confusing, especially for users coming from VirtualBox or VMware.&lt;br&gt;&#xA;These tools are great for beginners, but they consume a lot of system resources and can slow down the overall experience.&lt;/p&gt;&#xA;&lt;p&gt;In this guide, we will use &lt;strong&gt;QEMU with KVM acceleration&lt;/strong&gt;, a faster and more efficient virtualization solution built directly into the Linux kernel.&lt;br&gt;&#xA;It gives you better performance, lower resource usage, and a smoother workflow on Arch Linux.&lt;/p&gt;</description>
+      <guid>/posts/setup-qemu-on-arch-1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/qemu_kvm_setup/qemuarch.jpg&#34; alt=&#34;qemuface&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;INTRODUCTION&lt;/h2&gt;&#xA;&lt;p&gt;Virtualization on Arch Linux often feels confusing, especially for users coming from VirtualBox or VMware.&lt;br&gt;&#xA;These tools are great for beginners, but they consume a lot of system resources and can slow down the overall experience.&lt;/p&gt;&#xA;&lt;p&gt;In this guide, we will use &lt;strong&gt;QEMU with KVM acceleration&lt;/strong&gt;, a faster and more efficient virtualization solution built directly into the Linux kernel.&lt;br&gt;&#xA;It gives you better performance, lower resource usage, and a smoother workflow on Arch Linux.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
