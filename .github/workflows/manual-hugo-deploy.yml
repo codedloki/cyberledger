@@ -1,0 +1,40 @@
+name: 🚀 Manual Hugo Deploy to Main
+
+on:
+  # 1. NEW TRIGGER: Requires manual action to start the workflow
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: 'Branch to build the Hugo site from (e.g., test)'
+        required: true
+        default: 'test'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 2. CHECKOUT: Use the branch specified in the manual input
+      - name: Checkout Source Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.source_branch }} # Uses the manual input
+          submodules: true  # If you use themes as submodules
+          fetch-depth: 0
+
+      # 3. SETUP & BUILD (Same as before)
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+
+      - name: Build Hugo Site
+        run: hugo
+
+      # 4. DEPLOY: Pushes only the public/ folder content to the 'main' branch
+      - name: Deploy to Main Branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # Only push this folder's contents
+          publish_branch: main    # Push the output to the main branch
+          
