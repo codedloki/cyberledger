@@ -2,39 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:35631/tags/arch/</loc>
+    <loc>localhost/tags/archlinux/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/ccna/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/series/ccna-practical/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/cisco/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/network/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/packettracer/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/posts/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/series/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/setups/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/simulation/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/posts/the-easiest-way-to-install-cisco-packet-tracer-on-arch-linux-full-tutorial/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>localhost/tags/arch/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35631/tags/archlinux/</loc>
+    <loc>localhost/tags/kvm/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35631/</loc>
+    <loc>localhost/tags/linux/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35631/tags/kvm/</loc>
+    <loc>localhost/tags/qemu/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35631/tags/linux/</loc>
+    <loc>localhost/posts/setup-qemu-on-arch-1/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35631/posts/</loc>
+    <loc>localhost/tags/virtual/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35631/tags/qemu/</loc>
+    <loc>localhost/tags/vm/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:35631/posts/setup-qemu-on-arch/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:35631/tags/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:35631/tags/virtual/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:35631/tags/vm/</loc>
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:35631/categories/</loc>
+    <loc>localhost/categories/</loc>
   </url>
 </urlset>
